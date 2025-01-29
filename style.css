@@ -1,0 +1,50 @@
+:root {
+    --main-text-color: white;
+  }
+body {
+    background-color: #e5f6ee;
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+
+}
+
+.hd-ppc {
+    background-color: #00ae66;
+    padding: 2%;
+}
+
+.hd {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #00ae66;
+}
+
+.hd-ppc-text {
+    --minFontSize: 32px;
+    --maxFontSize: 64px;
+    --scaler: 10vw;
+    font-size: clamp( var(--minFontSize), var(--scaler), var(--maxFontSize) );
+  }
+
+.hd-ppc-subtext {
+    --minFontSize: 18px;
+    --maxFontSize: 32px;
+    --scaler: 10vw;
+    font-size: clamp( var(--minFontSize), var(--scaler), var(--maxFontSize) );
+  }
+
+.roboto-bold {
+    font-family: "Roboto", serif;
+    font-weight: 700;
+    font-style: normal;
+    color: var(--main-text-color) ;
+  }
+
+.roboto-regular {
+    font-family: "Roboto", serif;
+    font-weight: 300;
+    font-style: normal;
+    color: var(--main-text-color) ;
+}
