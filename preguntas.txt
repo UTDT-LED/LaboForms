@@ -4,7 +4,8 @@ Sí, realicé o realizaré un intercambio en el 1er semestre de 4to año
 Sí, realicé o realizaré un intercambio en el 2do semestre de 3er año
 
 opciones_prg_02:
-Lab 5
-Lab 6, Prof. Becerril
-Lab 6, Prof. De Marziani
-Lab 7, Prof. De Becerril
+Laboratorio de Diseño V
+Laboratorio de Diseño VI, Prof. Becerril
+Laboratorio de Diseño VI, Prof. De Marziani
+Laboratorio de Diseño VII, Prof. Becerril
+Laboratorio de Diseño VII, Prof. De Marziani
