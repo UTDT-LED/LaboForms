@@ -17,6 +17,10 @@ body {
     font-weight: var(--font-regular);
 }
 
+.form-select option{
+  font-family: 'Metropolis', sans-serif !important;
+}
+
 strong, .bold {
   font-weight: var(--font-bold);
 }
