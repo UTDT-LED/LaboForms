@@ -1,7 +1,8 @@
 opciones_prg_01:
 No, no realicé ni realizaré un intercambio
-Sí, realicé o realizaré un intercambio en el 1er semestre de 4to año
 Sí, realicé o realizaré un intercambio en el 2do semestre de 3er año
+Sí, realicé o realizaré un intercambio en el 1er semestre de 4to año
+
 
 opciones_prg_02:
 Laboratorio de Diseño V
