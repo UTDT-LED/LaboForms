@@ -30,29 +30,23 @@
         crossorigin="anonymous"></script>
 
     <div class="hd mb-3">
-
         <div class="hd-title">
-
             <div class="hd-ppc">
-
                 <div class="hd-ppc__title">
                     <div class="hd-ppc__title_text">
-                        <div class="hd-ppc-text">Laboratorios de Diseño VI y VII</div>
-                        <div class="hd-ppc-text">Guía Interactiva</div>
+                        <div class="hd-ppc__title_text_p1">
+                            <div class="hd-ppc-text">Laboratorios de Diseño VI y VII <br>Guía Interactiva</div>
+                            <img class="logo" src="./assets/ditelogo.png" alt="">
+                        </div>
                     </div>
-                    <img class="logo" src="./assets/dite_logo.png" alt="">
                 </div>
-
-                <div class="hd-ppc-subtext hd-ppc__subtitle">Para saber en qué laboratorio inscribirte, respondé las preguntas<br>
+                <div class="hd-ppc-subtext hd-ppc__subtitle">Para saber en qué laboratorio inscribirte, respondé las preguntas
                     y elegí la opción que mejor se ajuste a tus intereses
                 </div>
-
             </div>
-
         </div>
 
         <div class="container-selects">
-
             <div class="container-selects__select">
                 <!-- Pregunta 01 -->
                 <label class="hd-ppc-subtext" for="pregunta_01">¿Realizaste o vas a realizar un intercambio?</label>
@@ -70,13 +64,11 @@
                     <option value="" disabled selected>Selecciona una opción</option>
                 </select>
             </div>
-
             <div id="resultado" class="mt-3 alert alert-info container-selects__respuesta"></div>
 
         </div>
     </div>
     
-
     <script>
         const opciones_prg_01 = [];
         let opciones_prg_02 = [];
@@ -88,7 +80,7 @@
         const resultadoDiv2 = document.getElementById("main-body");
 
         
-        // Enable the second select when the first one has a valid selection
+        // Disponibilizar el segundo select solo cuando se haya seleccionado la primer resp.
         select_prg_01.addEventListener('change', () => {
             select_prg_02.disabled = !select_prg_01.value;
             modificarOpcionesDelSegundoSelect()
