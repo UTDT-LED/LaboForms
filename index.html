@@ -107,7 +107,7 @@
             let tmp_opciones_prg_02 = [];
 
             if(select_prg_01.value === "Sí, realicé o realizaré un intercambio en el 1er semestre de 4to año"){  
-                tmp_opciones_prg_02 = opciones_prg_02.filter(opcion => !["Laboratorio de Diseño VII, Prof. Becerril", "Laboratorio de Diseño V", "Laboratorio de Diseño VII, Prof. De Marziani"].includes(opcion));
+                tmp_opciones_prg_02 = opciones_prg_02.filter(opcion => !["Laboratorio de Diseño V", "Laboratorio de Diseño VII, Prof. De Marziani"].includes(opcion));
             } else if(select_prg_01.value === "Sí, realicé o realizaré un intercambio en el 2do semestre de 3er año"){  
                 tmp_opciones_prg_02 = opciones_prg_02.filter(opcion => opcion.trim() !== "Laboratorio de Diseño VI, Prof. De Marziani");
             }
@@ -190,15 +190,19 @@
                         mensaje = mensajeDefault
                     }                  
                 } else if (seleccion1 === opciones_prg_01[2]) { 
+                    //Sí, realicé o realizaré un intercambio en el 1er semestre de 4to año
                     if (seleccion2 === opciones_prg_02[1]){
+                        //Laboratorio de Diseño VI, Prof. Becerril
                         mensaje = mensaje_singular;
                         mensaje += respuestas_combos[6]
                     }else if (seleccion2 === opciones_prg_02[2] ) {
-                    /*- Intercambio: 1er semestre de 4to año
-                    - Último Laboratorio: Lab 
-                    */
+                        //Laboratorio de Diseño VI, Prof. De Marziani
                         mensaje = mensaje_singular;
                         mensaje += respuestas_combos[7]
+                    }else if (seleccion2 === opciones_prg_02[3]){
+                        //Laboratorio de Diseño VII, Prof. Becerril
+                        mensaje = mensaje_singular;
+                        mensaje += respuestas_combos[10]
                     }else{
                         mensaje = mensajeDefault
                     }
