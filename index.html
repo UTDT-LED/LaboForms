@@ -103,7 +103,7 @@
         }
 
         function modificarOpcionesDelSegundoSelect() {
-            //Código para cumplir con el punto 9 de las correciones
+            //Quita de opciones que no se corresponden con la primer seleccion
             let tmp_opciones_prg_02 = [];
 
             if(select_prg_01.value === "Sí, realicé o realizaré un intercambio en el 1er semestre de 4to año"){  
@@ -121,7 +121,6 @@
             } else {
                 llenarSelect(select_prg_02, opciones_prg_02);
             }
-            //End
         }
 
         async function cargarOpciones() {
